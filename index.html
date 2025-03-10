@@ -104,7 +104,7 @@
             "code": "[DannyDude420] Maybe I got somethin'... Try asking for 'hint'.",
             "hint": "[DannyDude420] Clues are hidden in plain sight. Look closer...",
             "password": "[DannyDude420] Think alphanumerics, something like 'Cr4ckM3'.",
-            "Cr4ckM3": "[DannyDude420] Alright, here’s the code: 7X9P2",
+            "Cr4ckM3": "[DannyDude420] Alright, heres the code: 7X9P2",
             "bye": "[DannyDude420] Later, nerd!",
             "who are you": "[DannyDude420] I'm just a guy who knows things..."
         };
@@ -117,7 +117,7 @@
                 const command = inputLine.innerText.replace('> ', '').trim();
                 commandHistory.push(command);
                 historyIndex = commandHistory.length;
-                const response = responses[command.toLowerCase()] || "[DannyDude420] Huh? Try something else.";
+                const response = responses[command] || "[DannyDude420] Huh? Try something else.";
                 output.innerHTML += `<br>> ${command}<br>${response}`;
                 inputLine.innerHTML = '> <span id="cursor"></span>';
                 terminal.scrollTop = terminal.scrollHeight;
